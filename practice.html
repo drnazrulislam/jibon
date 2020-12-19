@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width=media-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .navbar{
+                background-color:teal;
+                text-align:center;
+                padding:1% 7%;
+        }
+        .nav-header{
+                        font-size:2.1rem;
+                        color:white;
+                        padding-top:10px;
+        }
+      
+        .nav-menu a{text-decoration:none;
+            color:white;
+            padding:10px;
+            font-size:1.2rem;
+            background-color:brown;
+            margin:6px 0;
+            border-radius:100px;
+            text-transform: uppercase;
+            
+        }
+        .nav-menu a:hover{
+                            background-color:gray;
+        }
+        .nav-menu{
+                    display:flex;
+                    flex-direction:column;
+        }
+        
+       
+        [class*=col-]{
+                        float:left;
+                        padding:10px;
+        }
+        [class*=col-]{
+                        width:100%;
+        }
+        .navbar::after{
+                        content:'';
+                        clear:both;
+                        display:table;
+        }
+
+        @media only screen and (min-width:890px){
+
+        .col-1 {width:8.33%;}
+        .col-2 {width:16.6%;}        
+        .col-3 {width:25%;}
+        .col-4 {width:33.33%;}
+        .col-5 {width:41.66%;}
+        .col-6 {width:50%;}
+        .col-7 {width:58.33%;}
+        .col-8 {width:66.6%;}
+        .col-9 {width:75%;}
+        .col-10 {width:83.33%;}
+        .col-11 {width:91.66%;}
+        .col-12 {width:100%;}
+          .nav-logo{
+                        text-align:left;
+          }
+          .nav-header{
+                        text-align:right;
+                        padding-right:60px;
+          }
+          .nav-menu{
+                    display:flex;
+                    flex-direction:row;
+                    justify-content:flex-end;
+          }
+
+        .nav-menu a{
+                        background-color:transparent;
+                        border-radius:0px;
+        }
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="navbar">
+
+<div class="nav-logo col-2">
+    <img src="http://www.studywithanis.com/wp-content/uploads/2017/01/logo.png">
+</div>
+<div class="nav-header col-5">
+    Zahid Hasan Jibon
+</div>
+<div class="nav-menu col-5">
+    <a href="#">home</a>
+    <a href="#">about me</a>
+    <a href="#">contact</a>
+    <a href="#">gallery</a>
+</div>
+
+
+
+</div>
+
+
+
+
+</body>
+
+</html>
